@@ -6,7 +6,7 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 9, 72, 12),
+      backgroundColor: const Color(0xffea80fc),
       appBar: AppBar(title: const Text('Flutter Topicos'),),
       drawer: Drawer(
         child: ListView(
@@ -15,8 +15,8 @@ class DashboardScreen extends StatelessWidget {
               currentAccountPicture: CircleAvatar(
                 backgroundImage: NetworkImage('https://i.pravatar.cc/'),
               ),
-              accountName: Text('Rubensin Torres Frias :)'),
-              accountEmail: Text('ruben.torres@itcelaya.edu.mx'),
+              accountName: Text('Martina Daniela <3'),
+              accountEmail: Text('19030013@itcelaya.edu.mx'),
             ),
             ListTile(
               title: const Text('Conversor'),
@@ -37,15 +37,6 @@ class DashboardScreen extends StatelessWidget {
               },
             ),
             ListTile(
-              title: const Text('OnBoarding'),
-              subtitle: const Text('Board'),
-              trailing: const Icon(Icons.chevron_right),
-              leading: const Icon(Icons.phone_android),
-              onTap: (){
-                Navigator.pushNamed(context, "/onboard");
-              },
-            ),
-            ListTile(
               title: const Text('Movie APP'),
               subtitle: const Text('Lista de peliculas'),
               trailing: const Icon(Icons.chevron_right),
@@ -56,7 +47,7 @@ class DashboardScreen extends StatelessWidget {
             ),
             ListTile(
               title: const Text('Login'),
-              subtitle: const Text('Inicio sesion practica'),
+              subtitle: const Text('Practica 6: Login Flutter'),
               trailing: const Icon(Icons.chevron_right),
               leading: const Icon(Icons.app_shortcut),
               onTap: (){
@@ -70,6 +61,15 @@ class DashboardScreen extends StatelessWidget {
               leading: const Icon(Icons.apple),
               onTap: (){
                 Navigator.pushNamed(context, "/fruity");
+              },
+            ),
+            ListTile(
+              title: const Text('OnBoarding'),
+              subtitle: const Text('Practica 8: Onboarding Screen'),
+              trailing: const Icon(Icons.chevron_right),
+              leading: const Icon(Icons.amp_stories),
+              onTap: (){
+                Navigator.pushNamed(context, "/onboard");
               },
             )
           ],

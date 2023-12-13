@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:topicos/main.dart';
 import 'package:topicos/utilities/counter.dart';
 import 'package:topicos/utilities/carousel.dart';
 
@@ -22,6 +23,7 @@ class _FirstScreen extends State<FirstScreen> {
     setState(() {
       _isFavorited = !_isFavorited;
     });
+
   }
 
   @override
@@ -41,7 +43,9 @@ class _FirstScreen extends State<FirstScreen> {
                 icon: const Icon(
                   Icons.arrow_back,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pop(context);
+                },
               ),
             ],
           ),
