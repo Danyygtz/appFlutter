@@ -15,6 +15,7 @@ dependencies:
   flutter:
     sdk: flutter
   concentric_transition: ^1.0.3
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
   flutter_test:
@@ -27,3 +28,6 @@ flutter:
     - assets/
     - assets/logos/facebook.png
     - assets/logos/google.png
+    - assets/logos/linceslogo.png
+    
+    - assets/images/

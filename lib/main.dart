@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:topicos/screens/conversor_screen.dart';
 import 'package:topicos/screens/dashboard_screen.dart';
+import 'package:topicos/screens/fruit_screen.dart';
 import 'package:topicos/screens/intenciones_screen.dart';
 import 'package:topicos/screens/login_screen_practica.dart';
 import 'package:topicos/screens/onboarding_screen.dart';
@@ -24,6 +25,7 @@ class MainApp extends StatelessWidget {
         "/movie" :(context) => const PopularScreen(),
         "/onboard" : (context) => OnboardingScreen(),
         "/login" : (context) => LoginScreen(),
+        "/fruity" : (context) => FirstScreen(),
       },
       debugShowCheckedModeBanner: false,
       home: const SplashScreen(),

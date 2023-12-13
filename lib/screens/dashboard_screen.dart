@@ -62,6 +62,15 @@ class DashboardScreen extends StatelessWidget {
               onTap: (){
                 Navigator.pushNamed(context, "/login");
               },
+            ),
+             ListTile(
+              title: const Text('FruityApp'),
+              subtitle: const Text('Practica 7: UI Challenge'),
+              trailing: const Icon(Icons.chevron_right),
+              leading: const Icon(Icons.apple),
+              onTap: (){
+                Navigator.pushNamed(context, "/fruity");
+              },
             )
           ],
         ),
