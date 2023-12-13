@@ -30,7 +30,7 @@ class _FirstScreen extends State<FirstScreen> {
       home: Scaffold(
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: const Color.fromARGB(255, 21, 110, 5),
+          backgroundColor: const Color(0xff00bfa5),
           leading: Row(
             children: <Widget>[
               const SizedBox(
@@ -48,8 +48,8 @@ class _FirstScreen extends State<FirstScreen> {
           actions: <Widget>[
             IconButton(
               icon: const Icon(
-                Icons.money_rounded,
-                color: Color.fromARGB(255, 169, 255, 98),
+                Icons.auto_awesome_outlined,
+                color: Color(0xffe0f2f1),
               ),
               onPressed: () {},
             ),
@@ -58,7 +58,7 @@ class _FirstScreen extends State<FirstScreen> {
             ),
           ],
         ),
-        backgroundColor: Colors.amber[200],
+        backgroundColor: Color(0xffa7ffeb),
         body: ListView(
           children: <Widget>[
             Column(
@@ -90,14 +90,14 @@ class _FirstScreen extends State<FirstScreen> {
                             height: 20.0,
                           ),
                           const Text(
-                            'Mango',
+                            'Stickers +Kotas',
                             style: TextStyle(
                                 fontSize: 30.0, fontWeight: FontWeight.bold),
                           ),
                           const SizedBox(
                             height: 10.0,
                           ),
-                          const Text('1 each'),
+                          const Text('1 paquete de stickers'),
                           const SizedBox(
                             height: 20.0,
                           ),
@@ -106,7 +106,7 @@ class _FirstScreen extends State<FirstScreen> {
                             height: 30.0,
                           ),
                           const Text(
-                            'Product Description',
+                            'Paquete de Stickers',
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -114,10 +114,10 @@ class _FirstScreen extends State<FirstScreen> {
                             height: 15.0,
                           ),
                           const Text(
-                            'A mango is a type of fruit. '
-                            'The mango tree is native to South Asia, '
-                            'from where it has been taken to become one of the most widely cultivated fruits in the tropics.'
-                            'It is harvested in the month of march (summer season) till the end of May.',
+                            '¿Te gustan los animales domésticos? ¿Quieres expresar tu amor por ellos de una forma original y divertida? '
+                            'Entonces este paquete de stickers es para ti.'
+                            'Este paquete contiene 3 stickers de alta calidad, '
+                            'con diseños únicos y variados de diferentes animales domésticos, como perros, gatos, hamsters.',
                             style:
                                 TextStyle(letterSpacing: 2.0, fontSize: 15.0),
                           ),
@@ -130,15 +130,15 @@ class _FirstScreen extends State<FirstScreen> {
                                 style: ElevatedButton.styleFrom(
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20.0),
-                                    side: const BorderSide(color: Colors.yellow),
-                                  ), backgroundColor: Colors.yellow,
+                                    side: const BorderSide(color: Color.fromRGBO(100, 255, 218, 1)),
+                                  ), backgroundColor: Color(0xFF1de9b6),
                                   minimumSize: const Size(70.0, 70.0),
                                   elevation: 0.0,
                                 ),
                                 onPressed: _toggleFavorite,
                                 child: Icon(
                                   _isFavorited ? Icons.favorite_border : Icons.favorite,
-                                  color: Colors.red,
+                                  color: Colors.white,
                                 ),
                               ),
                               const SizedBox(width: 20.0),
@@ -146,13 +146,28 @@ class _FirstScreen extends State<FirstScreen> {
                                 style: ElevatedButton.styleFrom(
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20.0),
-                                  ), backgroundColor: Colors.amber[300],
-                                  minimumSize: const Size(260.0, 70.0),
+                                  ), backgroundColor: Color(0xFF1de9b6),
+                                  minimumSize: const Size(150.0, 70.0),
                                   elevation: 0.0,
                                 ),
                                 onPressed: () {},
                                 child: const Text(
-                                  'Add to cart',
+                                  'Comprar',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              const SizedBox(width: 20.0),
+                              ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20.0),
+                                  ), backgroundColor: Color(0xff00bfa5),
+                                  minimumSize: const Size(60.0, 70.0),
+                                  elevation: 0.0,
+                                ),
+                                onPressed: () {},
+                                child: const Text(
+                                  'Reservar',
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
                               ),

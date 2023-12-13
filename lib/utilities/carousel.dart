@@ -2,9 +2,9 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 final List<String> imgList = [
-  "images/bananas.png",
-  "images/mango2.png",
-  "images/more apple.png"
+  "assets/images/bulldog-frances.png",
+  "assets/images/gato.png",
+  "assets/images/hamster.png"
 ];
 
 class CarouselWithIndicatorDemo extends StatefulWidget {

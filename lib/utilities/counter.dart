@@ -13,14 +13,14 @@ class _CounterDesign extends State<CounterDesign> {
   void add() {
     setState(() {
       _n++;
-      _amt = _amt + 10;
+      _amt = _n * 17;
     });
   }
 
   void minus() {
     setState(() {
       if (_n != 0) _n--;
-      _amt = _amt - 10;
+      _amt = _n * 17;
     });
   }
 
@@ -31,7 +31,7 @@ class _CounterDesign extends State<CounterDesign> {
         Container(
           width: 155.0,
           decoration: BoxDecoration(
-            color: Colors.blueGrey[50],
+            color: Color.fromARGB(255, 123, 204, 164),
             borderRadius: BorderRadius.circular(20.0),
           ),
           child: Row(
@@ -39,7 +39,7 @@ class _CounterDesign extends State<CounterDesign> {
               new IconButton(
                 icon: const Icon(
                   Icons.add,
-                  color: Colors.black,
+                  color: Colors.green,
                 ),
                 onPressed: () {
                   add();
@@ -55,7 +55,7 @@ class _CounterDesign extends State<CounterDesign> {
               new IconButton(
                 icon: const Icon(
                   Icons.remove,
-                  color: Colors.black,
+                  color: Colors.red,
                 ),
                 onPressed: () {
                   minus();
@@ -68,11 +68,11 @@ class _CounterDesign extends State<CounterDesign> {
           ),
         ),
         SizedBox(
-          width: 100.0,
+          width: 50.0,
         ),
         Container(
             child: Text(
-          'Rs $_amt',
+          'MXN \$$_amt',
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 30.0,
