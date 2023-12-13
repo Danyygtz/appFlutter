@@ -53,6 +53,15 @@ class DashboardScreen extends StatelessWidget {
               onTap: (){
                 Navigator.pushNamed(context, "/movie");
               },
+            ),
+            ListTile(
+              title: const Text('Login'),
+              subtitle: const Text('Inicio sesion practica'),
+              trailing: const Icon(Icons.chevron_right),
+              leading: const Icon(Icons.app_shortcut),
+              onTap: (){
+                Navigator.pushNamed(context, "/login");
+              },
             )
           ],
         ),
